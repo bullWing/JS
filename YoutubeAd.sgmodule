@@ -17,4 +17,4 @@
 ^https?:\/\/+([^:\/]+\.)?topspin\.net\.\/secure\/media\/ - reject
 
 [MITM]
-hostname = *.youtube-video.com, *.youtube.com, youtubei.googleapis.com, *.google.com
+hostname = *youtube.com
