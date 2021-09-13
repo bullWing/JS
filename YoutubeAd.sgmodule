@@ -2,7 +2,6 @@
 #!desc=YouTube ads
 
 [URL Rewrite]
-#弹屏, 搜索, 以及底栏白屏广告
 ^https?:\/\/+([^:\/]+\.)?youtube-video\.download\/y-vd\.php - reject
 ^https?:\/\/+([^:\/]+\.)?youtube\.com\/ad_companion - reject
 ^https?:\/\/+([^:\/]+\.)?youtube\.com\/pagead\/ - reject
