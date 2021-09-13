@@ -1,8 +1,10 @@
 function gensokyo() {
+    console.log("Start")
     var name = 'PREF'
     var disableAutoplay = '&f5=30000'
     var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
     if (match === null) {
+        console.log("Start match cookie")
         document.cookie = 'PREF=' + disableAutoplay + ';  path=/; domain=.youtube.com';
         location.reload();
     } else if (match[2].includes('f5=20000') == true && match !== null) {
