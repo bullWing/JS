@@ -21,7 +21,6 @@ URL-REGEX,https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
 URL-REGEX,https?:\/\/pagead2\.googlesyndication\.com[\/:?=&]?,REJECT
 URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
 
-
 [URL Rewrite]
 ctier=[A-Z] citer=A 302
 
