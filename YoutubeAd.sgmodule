@@ -1,0 +1,21 @@
+#!name=YouTube
+#!desc=YouTube ads
+
+[URL Rewrite]
+#弹屏, 搜索, 以及底栏白屏广告
+^https?:\/\/+([^:\/]+\.)?youtube-video\.download\/y-vd\.php - reject
+^https?:\/\/+([^:\/]+\.)?youtube\.com\/ad_companion - reject
+^https?:\/\/+([^:\/]+\.)?youtube\.com\/pagead\/ - reject
+^https?:\/\/+([^:\/]+\.)?m\.youtube\.com\/get_midroll_ - reject
+^https?:\/\/+([^:\/]+\.)?pagead2\.googlesyndication\.com[\/:?=&]? - reject
+^https?:\/\/+([^:\/]+\.)?static\.doubleclick\.net[\/:?=&]? - reject
+^https?:\/\/+([^:\/]+\.)?www\.google\.com\/pagead\/ - reject
+^https?:\/\/+([^:\/]+\.)?www\.youtube\.com\/get_midroll_ - reject
+^https?:\/\/+([^:\/]+\.)?youtube\.com\/api\/stats\/ads - reject
+^https?:\/\/+([^:\/]+\.)?youtube\.com\/annotations_invideo\/?instream_ad=1 - reject
+^https?:\/\/+([^:\/]+\.)?youtube\.com\/get_video_info\/? - reject
+^https?:\/\/+([^:\/]+\.)?phobos\.apple\.com[\/:?=&]? - reject
+^https?:\/\/+([^:\/]+\.)?topspin\.net\.\/secure\/media\/ - reject
+
+[MITM]
+hostname = *.youtube-video.com, *.youtube.com, youtubei.googleapis.com, *.google.com
