@@ -17,6 +17,6 @@ function gensokyo() {
         console.log("Yeah it worked!")
     }
 }
-var refreshIntervalId = setInterval(gensokyo, 1000);
-window.addEventListener("yt-navigate-finish", gensokyo);
-window.addEventListener("spfdone", gensokyo);
+// var refreshIntervalId = setInterval(gensokyo, 1000);
+// window.addEventListener("yt-navigate-finish", gensokyo);
+// window.addEventListener("spfdone", gensokyo);
