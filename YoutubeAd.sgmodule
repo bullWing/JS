@@ -1,20 +1,13 @@
-#!name=YouTube
-#!desc=YouTube ads
+#!name=Block YouTube Advertising
+#!desc=仅用于视频广告，不适用允许 UDP 转发的节点及 Premium。
 
 [URL Rewrite]
-^https?:\/\/+([^:\/]+\.)?youtube-video\.download\/y-vd\.php - reject
-^https?:\/\/+([^:\/]+\.)?youtube\.com\/ad_companion - reject
-^https?:\/\/+([^:\/]+\.)?youtube\.com\/pagead\/ - reject
-^https?:\/\/+([^:\/]+\.)?m\.youtube\.com\/get_midroll_ - reject
-^https?:\/\/+([^:\/]+\.)?pagead2\.googlesyndication\.com[\/:?=&]? - reject
-^https?:\/\/+([^:\/]+\.)?static\.doubleclick\.net[\/:?=&]? - reject
-^https?:\/\/+([^:\/]+\.)?www\.google\.com\/pagead\/ - reject
-^https?:\/\/+([^:\/]+\.)?www\.youtube\.com\/get_midroll_ - reject
-^https?:\/\/+([^:\/]+\.)?youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/+([^:\/]+\.)?youtube\.com\/annotations_invideo\/?instream_ad=1 - reject
-^https?:\/\/+([^:\/]+\.)?youtube\.com\/get_video_info\/? - reject
-^https?:\/\/+([^:\/]+\.)?phobos\.apple\.com[\/:?=&]? - reject
-^https?:\/\/+([^:\/]+\.)?topspin\.net\.\/secure\/media\/ - reject
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+)&ctier=L(&.+) $1&ctier=A$2 header
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
+
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject
 
 [MITM]
-hostname = *youtube.com
+hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com
