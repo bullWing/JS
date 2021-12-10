@@ -1,3 +1,3 @@
-🎵 unlock1 = http, music.lolico.me, 39000
+🎵 unlock1 = http, unblock.surgeey.com, 8090
 🎵 unlock2 = http, 106.52.127.72, 19951
 🎵 unlock3 = ss, music.desperadoj.com, 30003, encrypt-method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2
