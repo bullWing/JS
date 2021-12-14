@@ -1,3 +1,4 @@
+#!MANAGED-CONFIG http://192.168.2.230:25500/sub?target=surfboard&url=https%3A%2F%2Ftest.com interval=864000 strict=false
 🎵 unlock1 = ss, music.desperadoj.com, 30003, encrypt-method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2
 🎵 unlock2 = ss, music.desperadoj.com, 30003, encrypt-method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2
 🎵 unlock3 = ss, music.desperadoj.com, 30003, encrypt-method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2
