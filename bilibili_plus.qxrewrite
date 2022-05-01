@@ -22,6 +22,6 @@
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-dict
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash url reject-dict
 
-^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/Sunert/Scripts/master/Script/Bilibili/BiliHD.js
+^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://github.com/Sunert/Script/raw/master/Script/Bilibili/BiliHD.js
 
 hostname = *.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,app.bilibili.com
