@@ -1,4 +1,1 @@
-#!MANAGED-CONFIG http://192.168.2.230:25500/sub?target=surfboard&url=https%3A%2F%2Ftest.com interval=864000 strict=false
-🎵 unlock1 = ss, music.desperadoj.com, 30003, encrypt-method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2
-🎵 unlock2 = ss, music.desperadoj.com, 30003, encrypt-method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2
-🎵 unlock3 = ss, music.desperadoj.com, 30003, encrypt-method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2
+skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1
