@@ -1,5 +1,5 @@
 #!name=Bilibili-Plus
-#!desc=去除b站广告，对app页面进行精简，解锁大会员画质
+#!desc=去除b站广告，对app页面进行精简
 
 [Rule]
 DOMAIN-SUFFIX,cm.bilibili.com,REJECT
