@@ -6,4 +6,4 @@
 # Bilibili开启高画质
 http-response https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) script-path=https://raw.githubusercontent.com/bullWing/JS/main/BiliHD.js, requires-body=true, timeout=10, tag=Bilibili-HD
 [MITM]
-hostname=app.bilibili.com
+hostname=app.bilibili.com,api.bilibili.com
