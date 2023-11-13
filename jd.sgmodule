@@ -12,5 +12,5 @@ IP-CIDR6, 2402:db40:5100:1011::5/128, REJECT, no-resolve
 [Script]
 jd_ad = type=http-response,pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(personinfoBusiness|start),requires-body=true,script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/JD/JD_remove_ads.js
 
-[Mitm]
+[MITM]
 hostname = %APPEND% api.m.jd.com
