@@ -1,0 +1,11 @@
+#!name=车来了
+#!desc=去广告
+
+[Rule]
+URL-REGEX,^https?:\/\/pic1.chelaile.net.cn\/adv\/,REJECT
+URL-REGEX,^https?:\/\/(api|atrace)\.chelaile\.net\.cn\/adpub\/,REJECT
+URL-REGEX,^https?:\/\/api\.chelaile\.net\.cn\/goocity\/advert\/,REJECT
+URL-REGEX,^https?:\/\/atrace\.chelaile\.net\.cn\/adpub\/,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/atrace\.chelaile\.net\.cn\/exhibit\?&adv_image,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/web\.chelaile\.net\.cn\/api\/adpub\/ad,REJECT
+URL-REGEX,^https?:\/\/cdn\.\w{3}\.chelaileapp\.cn\/(api\/)?adpub,REJECT
