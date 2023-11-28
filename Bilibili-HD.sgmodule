@@ -2,6 +2,6 @@
 #!desc=解锁大会员画质
 
 [Script]
-BiliBili_HD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=true,script-path=https://raw.githubusercontent.com/bullWing/JS/main/BiliHD.js
+BiliBili_HD = type=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,requires-body=true,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
 [MITM]
-hostname = %APPEND% app.bilibili.com,api.bilibili.com
+hostname = %APPEND% app.bilibili.com
